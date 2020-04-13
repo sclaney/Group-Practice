@@ -1,0 +1,486 @@
+.row, .color-row {
+    @media screen and (max-width:576px) {
+        justify-content: center;
+        align-items: center;
+        content: center;
+        text-align: center;
+    }
+}
+
+/* Colors */
+$theme-colors: (
+    "primary": #3B5693,
+    "secondary": #0D807F
+);
+
+$colors: (
+    "blue": #3B5693,
+    "purple": #00355B,
+    "pink": #FE9EC3,
+    "indigo": #001837,
+    "red": #EE5647,
+    "orange": #FFC776,
+    "yellow": #F9EEE2,
+    "green": #779D6A,
+    "teal": #0D807F,
+    "cyan": #3B5693
+);
+
+.primary {
+    background-color:#3B5693;
+}
+
+.purple {
+    background-color: #00355B;
+}
+
+.pink {
+    background-color: #FE9EC3;
+}
+
+.orange {
+    background-color: #FFC776;
+}
+
+.red {
+    background-color: #EE5647;
+}
+
+.yellow {
+    background-color: #F9EEE2;
+}
+
+.green {
+    background-color: #779D6A;
+}
+
+.teal {
+    background-color: #0D807F;
+}
+
+.cyan {
+    background-color: #3B5693;
+}
+
+.indigo {
+    background-color: #001837;
+}
+
+.dark-gray {
+    background-color: #353640;
+}
+
+.dim-gray {
+    background-color: #62636B;
+}
+
+.dimmer-gray {
+    background-color: #EBEBEC;
+}
+
+.feint-gray {
+    background-color: #F8F8F8;
+}
+
+/* Navbar */
+.navbar-light .navbar-brand {
+    color: #353640;
+    font-size: 2rem;
+    font-family: "DM Serif Display";
+}
+
+.nav-item {
+    font-size: 20px;
+    color: #62636b;
+    padding: 0px 0px 0px 24px;
+    font-family: "DM Sans";
+    line-height: 30px;
+    font-weight: 500;
+}
+
+#nav-contact-button {
+    font-size: 16px;
+    margin: 0px 0px 0px 24px;
+    font-family: "DM Sans";
+    line-height: 30px;
+    font-weight: 700;
+    padding: 10px 24px 10px 24px !important;
+}
+
+/* Cards */
+$card-border-color: none;
+$card-border-radius: 15px;
+
+.card {
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 2%;
+    border: none;
+    box-shadow: 0 8px 13px -8px rgba(0,0,0,0.2);
+    transition: all .3s ease-out;
+    position: absolute;
+}
+
+.card p {
+    margin-bottom: 8px !important;
+    font-family: "DM Sans";
+}
+
+    /*Horizontal Card*/
+#horizontal-card {
+    border: none;
+    box-shadow: 0 8px 8px -8px rgba(0,0,0,0.2);
+}
+
+#horizontal-card:hover {
+    box-shadow: 0 17px 20px -8px rgba(0,0,0,0.2);
+    transform: scale(1.01);
+}
+
+#horizontal-image-card-image {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#horizontal-image-card-text {
+    text-align: left;
+    vertical-align: middle;
+    height: 100%;
+    align-items: center;
+    @media screen and (max-width:453px) {
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: .8rem;
+        }
+        padding: 5px 5px 5px 15px;
+    }
+}
+
+    /*Staff Card*/
+#staff-card {
+    padding: 0 0 0 0;
+}
+
+#staff-card-text p {
+    margin-bottom: 0px !important;
+}
+
+#staff-card:hover {
+    box-shadow: 0 17px 20px -8px rgba(0,0,0,0.2);
+    transform: scale(1.01);
+}
+
+    /* Article Cards */
+#article-card {
+    box-shadow: none !important;
+    overflow: hidden;
+    border-radius: 0 !important;
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        .article-card-image {
+            transform: scale(1.01);
+        };
+    }
+}
+
+#article-card-body {
+    padding-left: 0px;
+    text-align: left;
+}
+
+.article-card-image {
+    max-height: 200px;
+    max-width: 600px;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 3px !important;
+}
+
+.btn.btn-primary.btn-sm {
+    padding: 4px 16px;
+}
+
+.btn.btn-primary {
+    padding: 10px 24px;
+}
+
+.btn.btn-primary.btn.lg {
+    padding: 13px 24px;
+}
+
+.btn.btn-outline-primary {
+    padding: 10px 24px;
+}
+
+/* Typography */
+$rfs-base-font-size: 20rem;
+
+a {
+    font-weight: 900;
+    font-family: "DM Sans";
+}
+
+h1 {
+    font-family: "DM Serif Display";
+    color: #353640;
+    margin-top: 0px;
+    margin-bottom: 24px;
+    line-height: 1;
+    font-weight: 400;
+    font-size: 3.5rem !important;
+}
+
+h2 {
+    font-family: "DM Serif Display";
+    color: #353640;
+    margin-top: 0px;
+    margin-bottom: 24px;
+    line-height: 60px;
+    font-weight: 400;
+    font-size: 3rem !important;
+}
+
+h3 {
+    font-family: "DM Serif Display";
+    color: #353640;
+    margin-top: 0px;
+    margin-bottom: 24px;
+    line-height: 1.125;
+    font-weight: 100;
+    font-size: 2.2rem !important;
+}
+
+h4 {
+    font-family: "DM Serif Display";
+    color: #353640;
+    margin-top: 0px;
+    margin-bottom: 24px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+h5 {
+    font-family: "DM Serif Display";
+    color: #353640;
+    margin-top: 0px;
+    margin-bottom: 24px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+h6 {
+    font-family: "DM Sans";
+    color: #62636B;
+    margin-top: 0px;
+    margin-bottom: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+p {
+    font-family: "DM Sans";
+    color: #62636B;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 0px !important;
+}
+
+.large-text {
+    font-family: "DM Sans";
+    color: #353640;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.small-text {
+    font-family: "DM Sans";
+    color: #62636b;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+p a {
+    color: "primary";
+    font-weight: bold;
+}
+
+/* Style Guide */
+.style-guide-item {
+    margin-bottom: 48px;
+}
+
+.style-item-header {
+    font-family: "DM Sans";
+    font-size: 20px;
+    color: #353640;
+    font-weight: 900;
+    line-height: 24px;
+    margin-bottom: 24px;
+    margin-top: 5px;
+}
+
+.style-guide-title {
+    margin-bottom: 10%;
+}
+
+/* Section */
+.section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid #e9eef1;
+}
+
+/* Badges */
+.badge {
+    padding: 8px 12px 8px 12px !important;
+}
+
+.badge.badge-primary {
+    background-color: #EBEEF4;
+    color: #3B5693;
+}
+
+.badge.badge-secondary {
+    background-color: #E7F2F2;
+    color: #0D807F;
+}
+
+/* Style Guide Colors Format */
+.color-block {
+    width: 96px;
+    height: 96px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.color-block-container p{
+    margin-top: 6px;
+    padding-bottom: 20px;
+    font-size: 14px !important;
+    color: #63636B;
+    opacity: 0.5;
+}
+
+.color-block-container {
+    margin-right: 24px;
+}
+
+.color-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* Features */
+.feature-text {
+    margin: auto 0;
+}
+
+.feature-row {
+    margin-bottom: 10%;
+}
+
+.feature-row h3 {
+    @media screen and (max-width:768px) {
+        margin-top: 30px;
+    }
+}
+
+/* Jumbotron */
+.jumbotron {
+    padding: 8rem 1rem 8rem 1rem !important;
+    position: relative;
+    overflow: hidden;
+    @media screen and (max-width:576px) {
+        text-align: center;
+    }
+    margin-bottom: 0px !important;
+}
+
+.jumbotron-text {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron-shape {
+ position: absolute;
+ left: auto;
+ top: auto;
+ right: -15%;
+ bottom: -10%;
+}
+
+/* Images with Shapes */
+.image-with-shape {
+    position: relative;
+}
+
+.top-image {
+    position: relative;
+    z-index: 99;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bottom-shape-right {
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: -10%;
+    bottom: -6%;
+}
+
+.bottom-shape-left {
+    position: absolute;
+    left: auto;
+    top: auto;
+    left: -10%;
+    bottom: -10%;
+}
+
+/* Footer */
+.footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #3B5693;
+    color: white;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.footer-links {
+    flex-direction: column;
+    display: flex;
+}
+
+.footer h5 {
+    color: white;
+    font-weight: regular;
+    padding-bottom: 20px;
+}
+
+.footer-link {
+    color: white;
+    padding-bottom: 12px;
+    opacity: 0.9;
+    text-decoration: none;
+    font-weight: 700;
+    transition: opacity 200ms ease;
+    font-size: 16px;
+}
+
+.footer-link:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: white;
+}
+
+@import "node_modules/bootstrap/scss/bootstrap";
